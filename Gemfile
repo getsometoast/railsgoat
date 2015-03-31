@@ -8,7 +8,7 @@ ruby '2.1.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 gem 'foreman'
 gem 'crack', '0.3.1'
 
@@ -43,7 +43,7 @@ group :development, :test, :mysql do
 end
 
 group :mysql do
-  gem 'mysql2'
+  gem 'pg'
 end
 
 # Gems used only for assets and not required
