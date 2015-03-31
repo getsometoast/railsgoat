@@ -5,7 +5,7 @@ Feature: simple nmap attack (sanity check)
     Given "nmap" is installed
     And the following profile:
       | name     | value      |
-      | hostname | scanme.nmap.org |
+      | hostname | 0.0.0.0:3000 |
 
   Scenario: Verify server is available on standard web ports
     When I launch an "nmap" attack with:
